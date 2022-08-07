@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("daiwei-lu-evl5l1EVQi0-unsplash.jpg");
+    background-size: cover;
+}
+
+.app-container{
+    width: 300px;
+    height: 500px;
+    background-color: rgba(15,15,15,0.925);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+#list-container{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: relative;
+}
+
+.item span{
+    display: inline-block;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    /*margin-right: 10px;*/
+}
+
+.check-box{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
+
+#list{
+    margin: .7rem;
+    /*background-color: red;*/
+}
+.minus{
+    color: orangered;
+    font-size: 1.5rem;
+}
+
+
+.input-section{
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*border-radius: 7px;*/
+    align-self: flex-end;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+}
+
+
+#input{
+    background-color: transparent;
+    padding: .7rem;
+    font-size: 1.2rem;
+    border: none;
+    width: 100%;
+    color: white;
+    /*border-top: 1px white solid;*/
+}
+
+#input:focus{
+    background-color: rgba(30,30,30,1);
+}
+
+#add-btn{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(30, 144, 255, 1);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:1rem;
+    right: 1rem;
+    offset-end: 0;
+    border-radius: 100%;
+    border: none;
+    transition: all .3s;
+
+}
+
+#add-btn:hover{
+    cursor: pointer;
+    /*border: white 2px solid;*/
+    background-color: rgba(100, 200 , 255);
+    font-weight: 700;
+    /*-moz-outline-radius: 100%;*/
+}
+
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
